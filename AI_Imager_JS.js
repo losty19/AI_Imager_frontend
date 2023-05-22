@@ -7,7 +7,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     const textInput = document.querySelector('#text-input').value;
   
     try {
-      const response = await fetch('/generate-image', {
+      const response = await fetch('/AI_Imager_frontend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
