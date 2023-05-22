@@ -22,7 +22,8 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
         // Display the generated image on the webpage
         const imageElement = document.createElement('img');
         imageElement.src = imageUrl;
-        document.body.appendChild(imageElement);
+        document.querySelector('#result').appendChild(imageElement)
+        //document.body.appendChild(imageElement);
       } else {
         console.error('Image generation failed');
       }
