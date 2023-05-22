@@ -1,7 +1,7 @@
 // JavaScript code for your frontend file
 
 // Event listener for form submission
-document.querySelector('form').addEventListener('submit', async (event) => {
+document.querySelector('#my-form').addEventListener('submit', async (event) => {
     event.preventDefault();
   
     const textInput = document.querySelector('#text-input').value;
