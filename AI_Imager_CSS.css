@@ -1,1 +1,51 @@
+/* AI_Imager_CSS.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Image Preview */
+#image-preview {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+}
+
+/* AI Processing */
+#process-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+}
 
