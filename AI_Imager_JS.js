@@ -27,7 +27,9 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
         const promptElement = document.createElement('p');
         promptElement.textContent = `Prompt: ${prompt}`;
 
-        document.querySelector('#result').appendChild(imageElement).appendChild(imageElement);
+        const resultContainer = document.querySelector('#result');
+        resultContainer.appendChild(imageElement);
+        resultContainer.appendChild(promptElement);
 
       } else {
         console.error('Image generation failed');
