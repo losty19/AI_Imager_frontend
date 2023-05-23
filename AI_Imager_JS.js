@@ -7,7 +7,7 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
     const textInput = document.querySelector('#text-input').value;
   
     try {
-      const response = await fetch('https://localhost:5000', {
+      const response = await fetch('http://localhost:5000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
