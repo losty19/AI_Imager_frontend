@@ -7,7 +7,7 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
     const textInput = document.querySelector('#text-input').value;
   
     try {
-      const response = await fetch('/AI_Imager_frontend', {
+      const response = await fetch('https://localhost:5000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -31,55 +31,3 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
       console.error('Error:', error);
     }
 });
-  
-
-
-/*   *** BELOW IS OLD CODE ***
-
-// AI_Imager_JS.js
-
-// Function to handle image upload
-function handleTextInput() {
-    const textInput = document.getElementById("text-input").value;
-    const resultDiv = document.getElementById("result");
-    resultDiv.textContent = `Text Input: ${textInput}`;
-}
-
-// Function to process image using AI
-async function processText() {
-    // TODO: Implement AI processing logic here
-
-    const resultDiv = document.getElementById("result");
-
-    const apiKey = "";
-    const prompt = 'Image based on text: ${textInput}';
-    
-    const response = await fetch("https://api.openai.com/v1/images", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": 'Bearer ${apiKey}'
-        },
-        body: JSON,stringify({
-            prompt: prompt
-        })
-    });
-
-    const responseData = await response.json();
-    const imageSrc = responseData?.images?.[0]?.image?.url;
-
-    if (imageSrc) {
-        resultDiv.innerHTML = `<img src="${imageSrc}" alt="Generated Image">`;
-    } else {
-        resultDiv.textContent = "Image generation failed.";
-    }
-
-    
-    //resultDiv.textContent = "Text processing in progress...";
-}
-
-// Event listeners
-document.getElementById("text-input").addEventListener("input", handleTextInput);
-document.getElementById("process-btn").addEventListener("click", processText);
-
-*/
