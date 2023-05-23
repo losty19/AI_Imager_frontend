@@ -1,5 +1,13 @@
 // JavaScript code for your frontend file
 
+function adjustTextareaHeight() {
+  const textarea = document.querySelector('#text-input');
+  textarea.style.height = 'auto';
+  textarea.style.height = `${textarea.scrollHeight}px`;
+}
+// Event listener for textarea input
+document.querySelector('#text-input').addEventListener('input', adjustTextareaHeight);
+
 // Event listener for form submission
 document.querySelector('#my-form').addEventListener('submit', async (event) => {
     event.preventDefault();
