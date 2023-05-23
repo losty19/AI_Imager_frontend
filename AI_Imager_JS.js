@@ -18,12 +18,17 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
       if (response.ok) {
         const data = await response.json();
         const imageUrl = data.image_url;
-  
+        const prompt = data.prompt;
+
         // Display the generated image on the webpage
         const imageElement = document.createElement('img');
         imageElement.src = imageUrl;
-        document.querySelector('#result').appendChild(imageElement)
-        //document.body.appendChild(imageElement);
+
+        const promptElement = document.createElement('p');
+        promptElement.textContent = `Prompt: ${prompt}`;
+
+        document.querySelector('#result').appendChild(imageElement).appendChild(imageElement);
+
       } else {
         console.error('Image generation failed');
       }
