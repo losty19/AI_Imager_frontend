@@ -44,6 +44,11 @@ section {
     text-align: center;
 }
 
+#submit-button {
+    background-color: blue;
+    color: white;
+}
+
 h1, h2 {
     color: #333;
     text-align: center;
