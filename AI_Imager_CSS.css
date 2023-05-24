@@ -1,6 +1,104 @@
 /* AI_Imager_CSS.css */
 
 /* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a1cdf1;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a1cdf1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4f8fd6;
+}
+
+.features {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.feature {
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial cite {
+    font-style: italic;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -61,11 +159,8 @@ h1, h2 {
 }
 
 footer {
-    background-color: #79e4b9;
+    background-color: #222;
     color: #fff;
-    padding: 10px;
-    width: 100%;
-    font-size: 14px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: 20px;
+    text-align: center;
 }
