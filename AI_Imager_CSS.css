@@ -66,14 +66,14 @@ nav ul li a.active {
     margin-bottom: 20px;
     line-height: 1.2;
     font-weight: bold;
-    color: #f4f4f4;
+    color: #4826c1;
     text-shadow: 2px 2px #1a202c;
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 30px;
-    color: #f4f4f4;
+    color: #eb32eb;
     text-shadow: 2px 2px #1a202c;
 }
 
