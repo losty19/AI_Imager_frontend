@@ -21,10 +21,12 @@ body {
     align-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #4c5c68 0%, #a7d5c4 100%);
-    background-image: url('https://i.imgur.com/mpiwhbx.png');
+    /*background: linear-gradient(to right, #4c5c68 0%, #a7d5c4 100%);
+    */
+    background: linear-gradient(to left, #3f5efb, #fc466b);
+    /*background-image: url('https://i.imgur.com/mpiwhbx.png');
     background-size: unset;
-    background-repeat: repeat;
+    background-repeat: repeat;*/
 }
 
 nav ul {
