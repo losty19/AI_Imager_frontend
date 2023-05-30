@@ -71,13 +71,8 @@ nav ul li a.active {
 }
 
 .hero p {
-    /*
     font-size: 24px;
     margin-bottom: 30px;
-    color: #eb32eb;
-    text-shadow: 2px 2px #1a202c;
-    */
-    background-clip: text;
     background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
     color: var(--color-background);
     font-size: var(--font-size);
