@@ -198,7 +198,7 @@ section {
 }
 
 /* Custom Text Input Box Styling */
-input[type="text"] {
+input[type="text-input"] {
     padding: 10px;
     border: 2px solid #4c5c68;
     border-radius: 8px;
@@ -209,12 +209,12 @@ input[type="text"] {
 }
   
 /* Text Input Box Hover Styling */
-input[type="text"]:hover {
+input[type="text-input"]:hover {
     border-color: #718096;
 }
   
 /* Text Input Box Focus Styling */
-input[type="text"]:focus {
+input[type="text-input"]:focus {
     outline: none;
     border-color: #718096;
     box-shadow: 0 0 5px rgba(113, 128, 150, 0.5);
