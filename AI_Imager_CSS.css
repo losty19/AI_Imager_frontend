@@ -52,8 +52,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #a1cdf1;
-    background-color: #a1cdf1;
+    color: #a8cfee;
+    background-color: #6561dc;
 }
 
 .hero-content {
@@ -75,7 +75,6 @@ nav ul li a.active {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "Josefin Sans", sans-serif;
     background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%, #095fab);
     background-size: auto auto;
     background-clip: border-box;
@@ -85,7 +84,7 @@ nav ul li a.active {
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 3.5s linear infinite;
+    animation: textclip 5.5s linear infinite;
     display: inline-block;
 }
 
@@ -197,6 +196,30 @@ section {
     margin-bottom: 40px;
     text-align: center;
 }
+
+/* Custom Text Input Box Styling */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #4c5c68;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #3d4852;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+  
+/* Text Input Box Hover Styling */
+input[type="text"]:hover {
+    border-color: #718096;
+}
+  
+/* Text Input Box Focus Styling */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #718096;
+    box-shadow: 0 0 5px rgba(113, 128, 150, 0.5);
+}
+  
 
 #submit-button {
     background-color: #4c5c68;
