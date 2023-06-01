@@ -259,6 +259,13 @@ input[type="text"]:focus {
     border: 2px solid #718096;
 }
 
+#error-message {
+    display: none;
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 h1, h2 {
     color: #3d4852;
     text-align: center;
