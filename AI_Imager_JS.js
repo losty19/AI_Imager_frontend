@@ -58,3 +58,10 @@ function displayErrorMessage(message) {
   // Display the error message element
   errorMessageElement.style.display = "block";
 }
+
+// Close button for error message
+$(document).ready(function() {
+  $('.close-button').click(function() {
+    $('#error-message').hide();
+  });
+});
