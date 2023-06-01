@@ -60,8 +60,12 @@ function displayErrorMessage(message) {
 }
 
 // Close button for error message
-$(document).ready(function() {
-  $('.close-button').click(function() {
-    $('#error-message').hide();
+document.addEventListener('DOMContentLoaded', function() {
+  var closeButton = document.querySelector('.close-button');
+  var errorMessage = document.querySelector('.error-message');
+
+  closeButton.addEventListener('click', function() {
+    errorMessage.style.display = 'none';
   });
 });
+

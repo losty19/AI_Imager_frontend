@@ -269,7 +269,7 @@ input[type="text"]:focus {
     display: none;
     z-index: 9999;
 }
-
+  
 .error-message p {
     margin: 0;
 }
