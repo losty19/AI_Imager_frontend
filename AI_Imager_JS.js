@@ -43,6 +43,18 @@ document.querySelector('#my-form').addEventListener('submit', async (event) => {
         console.error('Image generation failed');
       }
     } catch (error) {
+      displayErrorMessage("An error occured. Please try again. ")
       console.error('Error:', error);
     }
 });
+
+function displayErrorMessage(message) {
+  // Get a reference to the error message element in your HTML
+  const errorMessageElement = document.getElementById("error-message");
+
+  // Update the error message text
+  errorMessageElement.textContent = message;
+
+  // Display the error message element
+  errorMessageElement.style.display = "block";
+}
