@@ -223,11 +223,15 @@ input[type="text"]:focus {
 .input-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .input-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
 }
 
 #text-input {
