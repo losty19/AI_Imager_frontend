@@ -219,7 +219,21 @@ input[type="text"]:focus {
     border-color: #718096;
     box-shadow: 0 0 5px rgba(113, 128, 150, 0.5);
 }
-  
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+#text-input {
+    flex: 1;
+    margin-right: 10px;
+}
 
 #submit-button {
     background-color: #4c5c68;
@@ -233,6 +247,7 @@ input[type="text"]:focus {
     transition: transform .2s ease-out;
     text-transform: uppercase;
     letter-spacing: 1px;
+    flex: none;
 }
 
 #submit-button:hover {
